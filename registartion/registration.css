@@ -283,6 +283,7 @@ input::-webkit-inner-spin-button {
 
 .form-item-checkbox {
     display: flex;
+    cursor: git ;
 }
 
 .form-item-checkbox__icon {
