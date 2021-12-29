@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="account.css">
+    <title>Account</title>
+</head>
+<body>
+    
+    <div class="main-content">
+        <main class="page-profile">
+
+            <div class="container">
+
+                <h1 class="head-regular page-profile__title">Личный кабинет</h1>
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <aside class="profile-sitebar">
+                            <div class="profile-menu-selected">
+                                <span class="profile-menu-selected__text">Личный кабинет</span>
+                                <span class="profile-menu-selected__arrow"></span>
+                            </div>
+                            <ul class="profile-menu">
+                                <li class="profile-menu__item js-profile-link profile-menu__item--active">
+                                    <span class="profile-menu-selected__square"></span>
+                                    <span class="profile-menu__caption">Личный кабинет</span>
+                                </li>
+                                <li class="profile-menu__item js-profile-link">
+                                    <span class="profile-menu-selected__square"></span>
+                                    <span class="profile-menu__caption">История покупок</span>
+                                </li>
+                                <li class="profile-menu__item js-profile-link">
+                                    <span class="profile-menu-selected__square"></span>
+                                    <span class="profile-menu__caption">Профиль</span>
+                                </li>
+                                <li class="profile-menu__item js-profile-link">
+                                    <span class="profile-menu-selected__square"></span>
+                                    <span class="profile-menu__caption">История баллов</span>
+                                </li>
+                                <li class="profile-menu__line"></li>
+                                <li class="profile-menu__item-last">
+                                    <span class="profile-menu-selected__square"></span>
+                                    <a href="#" class="profile-menu__caption">Выйти</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="profile-content">
+
+                            <section class="profile-main profile-content__item js-profile-content">
+
+                                <div class="profile-status">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="profile-status__card">
+                                                <div class="profile-status__count">
+                                                    <span class="profile-status__count-value">3000 баллов</span>
+                                                    <span class="profile-status__count-status">SILVER</span>
+                                                </div>
+                                                <div class="profile-status__remove">
+                                                    100 сгорит через 20 дней
+                                                </div>
+                                                <div class="profile-status__code">
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div class="col-md-5 profile-status__level">
+                                            <h4 class="head-regular profile-status__title">Уровни участия</h4>
+
+                                            <div class="profile-status__level-table">
+                                                <div class="profile-status__level-head">
+                                                    <div class="profile-status__level-col">Карта</div>
+                                                    <div class="profile-status__level-col">Период <br> (дней)</div>
+                                                    <div class="profile-status__level-col">Сумма <br> (руб)</div>
+                                                </div>
+                                                <div class="profile-status__level-row">
+                                                    <div class="profile-status__level-col">Silver</div>
+                                                    <div class="profile-status__level-col">-</div>
+                                                    <div class="profile-status__level-col">-</div>
+                                                </div>
+                                                <div class="profile-status__level-row profile-status__level-row--grey">
+                                                    <div class="profile-status__level-col">Gold</div>
+                                                    <div class="profile-status__level-col">365</div>
+                                                    <div class="profile-status__level-col">200 000</div>
+                                                </div>
+                                                <div class="profile-status__level-row profile-status__level-row--bb">
+                                                    <div class="profile-status__level-col">Platinum</div>
+                                                    <div class="profile-status__level-col">365</div>
+                                                    <div class="profile-status__level-col">400 000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="head-regular profile-content__title profile-content__title--flex"> 
+                                    <span>История покупок</span>   
+                                    <a href="#" class="link profile__link">Показать полностью</a>
+                                </h4>
+                        
+                                <div class="profile-table-wrap profile-main__table">
+                                    <div class="profile-table">
+                                        <div class="profile-table__head">
+                                            <div class="profile-table__col">№</div>
+                                            <div class="profile-table__col">Услуга или товар</div>
+                                            <div class="profile-table__col">Статус</div>
+                                            <div class="profile-table__col">Дата покупки</div>
+                                            <div class="profile-table__col">Стоимость покупки</div>
+                                            <div class="profile-table__col">Начисление баллов</div>
+                                        </div>    
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--await">Ожидание</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>                                
+
+                                <h4 class="head-regular profile-main__title"> 
+                                    Специальные предложения
+                                </h4>
+
+                                <div class="profile-banners">
+                                    <div class="profile-banners__item"> <span>Рекламный баннер</span> </div>
+                                    <div class="profile-banners__item"><span>Рекламный баннер</span></div>
+                                </div>
+
+                                <h4 class="head-regular profile-main__title"> 
+                                    Частозадавемые вопросы
+                                </h4>
+
+                                <div class="landing-faq-accordion profile-accordion">
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Как получить карту лояльности?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Как и где накопить бонусы</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Как и где потратить бонусы?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Как узнать бонусный баланс на своей карте?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Как активировать карту?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Срок жизни бонусов?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Какие ещё привилегии дает карта лояльности?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                    <div class="landing-faq-accordion__item">
+                                        <div class="landing-faq-accordion-item__head js-accordion-head">
+                                            <p>Даются ли бонусы если я привел друзей?</p>
+                                            <div class="landing-faq-accordion-item__arrow"></div>
+                                        </div>
+                                        <div class="landing-faq-accordion-item__body js-accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="profile-history profile-content__item" hidden="">
+                                <h4 class="head-regular profile-content__title"> 
+                                    История покупок
+                                </h4>
+                        
+                                <div class="profile-table-wrap profile-history__table">
+                                    <div class="profile-table">
+                                        <div class="profile-table__head">
+                                            <div class="profile-table__col">№</div>
+                                            <div class="profile-table__col">Услуга или товар</div>
+                                            <div class="profile-table__col">Статус</div>
+                                            <div class="profile-table__col">Дата покупки</div>
+                                            <div class="profile-table__col">Стоимость покупки</div>
+                                            <div class="profile-table__col">Начисление баллов</div>
+                                        </div>    
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--await">Ожидание</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="profile-table__item">
+                                            <div class="profile-table__row">
+                                                <div class="profile-table__col">45762</div>
+                                                <div class="profile-table__col">
+                                                    <span class="profile-table__more-link js-profile-more">
+                                                        <span>Дневной ски-пасс 2021/2022</span>
+                                                        <span class="profile-table__more-icon"></span>
+                                                    </span>                                             
+                                                </div>
+                                                <div class="profile-table__col profile-table__col--send">Отправлен</div>
+                                                <div class="profile-table__col">28.12.2021</div>
+                                                <div class="profile-table__col">1200 RUB</div>
+                                                <div class="profile-table__col">+300 баллов</div>
+                                            </div>
+    
+                                            <div class="profile-table__hide js-profile-hide">
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Категория</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Взрослый</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Период использования</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">01.05.2021-30.11.2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Дата начала действия билета</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">24-08-2021</div>
+                                                </div>
+                                                <div class="profile-table__hide-row">
+                                                    <div class="profile-table__hide-col">Тип носителя</div>
+                                                    <div class="profile-table__hide-col--grow"></div>
+                                                    <div class="profile-table__hide-col">Получить билет в терминале самообслуживания</div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div> 
+                            </section>
+                            <section class="profile-data profile-content__item" hidden="">
+                                <h4 class="head-regular profile-content__title">Профиль</h4>
+
+                                <form class="profile-data-form" method="post" action="/index.php?route=account/edit" enctype="multipart/form-data">
+
+                                    <div class="row">
+                                        <div class="profile-data-form__left col-md-4">
+                                            <div class="form-item__photo form-item__photo--nophoto">
+                                                <img src="../images/person.svg">
+                                            </div>
+                                            <label class="btn btn-secondary form-item--file disabled">
+                                                <input type="file" class="form-item__input-file">
+                                                <span>Добавить фото</span>
+                                            </label>
+                                        </div>
+    
+                                        <div class="col-md-8">
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="firstname" id="firstname" pattern="^[А-Яа-яЁё]+$" required disabled>
+                                                    <span class="form-item__name">Имя <span class="star">*</span></span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+                                            
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="surname" id="surname" pattern="^[А-Яа-яЁё]+$" required disabled>
+                                                    <span class="form-item__name">Фамилия <span class="star">*</span></span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="number" name="phone" id="phone" required disabled>
+                                                    <span class="form-item__name">Контактный номер телефона <span class="star">*</span></span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="email" id="email" required disabled>
+                                                    <span class="form-item__name">Адрес электронной почты <span class="star">*</span></span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="city" id="city" disabled>
+                                                    <span class="form-item__name">Город проживания</span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item form-item--datepicker">
+                                                    <input class="form-item__input form-item__input--datepicker js-profile-input" type='text' name="date-birth" id="date-birth" disabled/>
+                                                    <span class="form-item__name">Дата рождения</span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="sex" id="sex" disabled>
+                                                    <span class="form-item__name">Пол</span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="children" id="children" disabled>
+                                                    <span class="form-item__name">Есть ли дети?</span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <div class="profile-data-form__item">
+                                                <label class="form-item">
+                                                    <input class="form-item__input js-profile-input" type="text" name="pets" id="pets" disabled>
+                                                    <span class="form-item__name">Есть ли животные?</span>
+                                                </label>
+                                                <span class="profile-data-form__edit js-profile-edit"></span>
+                                            </div>
+    
+                                            <button class="btn btn-secondary profile-data__btn">Сохранить</button>                                        
+                                        </div>
+                                    </div>
+                                    
+
+                                </form>
+                            </section>                            
+                            <section class="profile-points profile-content__item" hidden="">
+                                <h4 class="head-regular profile-content__title"> 
+                                    История баллов
+                                </h4>
+                        
+                                <div class="profile-table-wrap profile-points__table">
+                                    <div class="profile-table">
+                                        <div class="profile-table__head">
+                                            <div class="profile-points__table-col">Дата</div>
+                                            <div class="profile-points__table-col">Тип операция</div>
+                                            <div class="profile-points__table-col">Сумма</div>
+                                            <div class="profile-points__table-col">Остаток после списания</div>
+                                            <div class="profile-points__table-col">Детали</div>
+                                        </div>    
+                                        <div class="profile-points__table-row">
+                                            <div class="profile-points__table-col">01.12.2021</div>
+                                            <div class="profile-points__table-col">Списание</div>
+                                            <div class="profile-points__table-col">-25</div>
+                                            <div class="profile-points__table-col">12000</div>
+                                            <div class="profile-points__table-col">Покупка на сайте</div>
+                                        </div>
+                                        <div class="profile-points__table-row">
+                                            <div class="profile-points__table-col">01.12.2021</div>
+                                            <div class="profile-points__table-col">Списание</div>
+                                            <div class="profile-points__table-col">-25</div>
+                                            <div class="profile-points__table-col">12000</div>
+                                            <div class="profile-points__table-col">Покупка на сайте</div>
+                                        </div>
+                                        <div class="profile-points__table-row">
+                                            <div class="profile-points__table-col">01.12.2021</div>
+                                            <div class="profile-points__table-col">Списание</div>
+                                            <div class="profile-points__table-col">-25</div>
+                                            <div class="profile-points__table-col">12000</div>
+                                            <div class="profile-points__table-col">Покупка на сайте</div>
+                                        </div>
+                                        <div class="profile-points__table-row">
+                                            <div class="profile-points__table-col">01.12.2021</div>
+                                            <div class="profile-points__table-col">Списание</div>
+                                            <div class="profile-points__table-col">-25</div>
+                                            <div class="profile-points__table-col">12000</div>
+                                            <div class="profile-points__table-col">Покупка на сайте</div>
+                                        </div>
+                                        <div class="profile-points__table-row">
+                                            <div class="profile-points__table-col">01.12.2021</div>
+                                            <div class="profile-points__table-col">Списание</div>
+                                            <div class="profile-points__table-col">-25</div>
+                                            <div class="profile-points__table-col">12000</div>
+                                            <div class="profile-points__table-col">Покупка на сайте</div>
+                                        </div>                                       
+                                    </div>
+                                </div> 
+                            </section>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+    <script src="../js/air.datepicker.js"></script>
+    <script>
+
+        //переключение табов, взяла скрипт с основного сайта, не уверена, что его нужно переносить
+        if (document.querySelector('.profile-menu-selected')) {
+        (function () {
+            var prof_aside = document.querySelector('.profile-sitebar'),
+                prof_sel = document.querySelector('.profile-menu-selected__text');
+            prof_aside.addEventListener('click', function (e) {
+            this.classList.toggle('profile-sitebar--open');
+            });
+            var menu_items = document.querySelectorAll('.profile-menu__item');
+            menu_items = Array.prototype.slice.call(menu_items);
+            var content_items = document.querySelectorAll('.profile-content__item');
+            menu_items.forEach(function (item, i) {
+            item.addEventListener('click', function () {
+                menu_items.forEach(function (item, i) {
+                item.classList.remove('profile-menu__item--active');
+                content_items[i].hidden = true;
+                });
+
+                if (window.innerWidth < 992) {
+                prof_sel.textContent = this.querySelector('.profile-menu__caption').textContent;
+                }
+
+                this.classList.add('profile-menu__item--active');
+                return content_items[i].hidden = false;
+            });
+            });
+        })();
+        }
+
+        $(document).ready(function() {
+            //edit profile
+            var editBtn = $('.js-profile-edit'),
+                editInput = $('.js-profile-input');
+
+            editBtn.on('click', function() {
+                var input = $(this).siblings('.form-item').children('.form-item__input');
+                input.removeAttr('disabled').focus();
+            });
+
+            //можно добавить атрибут disabled при потере фокуса с инпута
+            // editInput.on('blur', function() {
+            //     $(this).attr('disabled', true);
+            // });
+
+            //accordion истории покупок
+            var accordionItem = $('.js-profile-more'),
+                accordionBody = $('.js-profile-hide');
+
+            accordionItem.on('click', function() {                
+                $(this).toggleClass('active');
+                $(this).parents('.profile-table__row').siblings('.js-profile-hide').slideToggle();
+            });
+
+            //accordion faq
+            var accordionItemFaq = $('.js-accordion-head'),
+                accordionBodyFaq = $('.js-accordion-body')
+
+                accordionItemFaq.on('click', function() {
+                //закомментировать след. 4 строки, если не нужно раскрытие только одного элемента
+                if(!$(this).hasClass('active')) {
+                    accordionItemFaq.removeClass('active');
+                    accordionBodyFaq.slideUp();
+                }        
+                
+                $(this).toggleClass('active');
+                $(this).siblings('.js-accordion-body').slideToggle();
+            });    
+            
+            // инициализация календаря
+            $('#date-birth').datepicker();
+    
+        });
+    </script>
+</body>
+</html>

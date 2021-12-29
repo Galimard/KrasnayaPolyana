@@ -102,6 +102,10 @@ body {
     margin-bottom: 30px;
 }
 
+.mb65 {
+    margin-bottom: 65px;
+}
+
 input[type='number'] {
     -moz-appearance:textfield;
 }
@@ -161,6 +165,18 @@ input::-webkit-inner-spin-button {
     right: 5px;
     transform: translateY(-50%);
 } 
+
+.form-item--datepicker::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/calendar.svg') center center no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
 
 .form-item__input {
     width: 100%;
@@ -233,11 +249,19 @@ input::-webkit-inner-spin-button {
 }
 
 .form-item-radio {
+    width: 100%;
+    cursor: pointer;
+}
+
+.form-item-radio__wrap {
     display: flex;
     align-items: center;
-    cursor: pointer;
     padding-bottom: 15px;
     border-bottom: 1px solid #E8E8E8;
+}
+
+.form-item-radio__input:checked + .form-item-radio__wrap {
+    border-bottom: 1px solid #01BAC6;
 }
 
 .form-item-radio__input,
@@ -277,13 +301,13 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.form-item-radio__input:checked + .form-item-radio__icon:before {
+.form-item-radio__input:checked + .form-item-radio__wrap .form-item-radio__icon:before {
     opacity: 1;
 }
 
 .form-item-checkbox {
     display: flex;
-    cursor: git ;
+    cursor: pointer;
 }
 
 .form-item-checkbox__icon {
@@ -322,9 +346,58 @@ input::-webkit-inner-spin-button {
     color: #757575;
 }
 
+.form-item__message {
+    font-size: 12px;
+    line-height: 14px;
+    color: #b9b9b9;
+    position: absolute;
+    top: 62px;
+    left: 5px;
+}
+
+.form-item__message.error {
+    color: #e30613;
+}
+
+#step2 {
+    display: none;
+}
+
 @media all and (max-width: 1200px) {
     .registration-form__header,
     .registration-form__container {
-        padding: 32px 50px 39px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .mb-20-md {
+        margin-bottom: 20px;
+    }
+
+    .form-item__message {
+        top: unset;
+        bottom: 60px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .mb-10-sm {
+        margin-bottom: 10px;
+    }
+
+    .registration-page {
+        padding-top: 32px;
+    }
+
+    .registration__header {
+        margin-bottom: 32px;
+    }
+
+    .registration-form__header,
+    .registration-form__container {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
