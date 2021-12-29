@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="landing.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main class="landing">
+
+        <section class="landing-programm bg-gray">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-7 order-lg-0 order-1">
+                        <h1 class="landing__title">Программа лояльности Курорта Красная Поляна</h1>
+                        <p class="landing-programm__subtitle">Покупать на сайте курорта выгодно! Возвращайте баллами до 10% от суммы покупки. Баллы можно потратить товары и услуги курорта!</p>
+                        <div class="landing-programm__buttons">
+                            <a href="#" class="landing__btn landing__btn--red landing-programm__btn-left">Стать участником</a>
+                            <a href="#" class="landing__btn landing__btn--borderd">Войти в кабинет</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1 order-0">
+                        <div class="landing-programm__img">
+                            <img src="../images/card-big.png">
+                            <div class="landing-programm__circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sticky-wrap">
+            <div class="landing-nav">
+                <div class="container">
+                    <nav class="landing-nav__list">
+                        <a href="#advantages" data-scroll="advantages" class="js-menu-link landing-nav__link active"><span>Преимущества</span></a>
+                        <a href="#get-points" data-scroll="get-points" class="js-menu-link landing-nav__link"><span>Как получить баллы</span></a>
+                        <a href="#spend-points" data-scroll="spend-points" class="js-menu-link landing-nav__link"><span>Как списать баллы</span></a>
+                        <a href="#extra-bonus" data-scroll="extra-bonus" class="js-menu-link landing-nav__link"><span>Дополнительно</span></a>
+                        <a href="#faq" data-scroll="faq" class="js-menu-link landing-nav__link"><span>Остались вопросы?</span></a>
+                        <a href="#" class="landing__btn--round"><span>Стать участником</span></a>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="landing-opportunities">
+                <div class="container">
+                    <h2 class="landing__middle-title">Одна карта - горы возможностей</h2>
+
+                    <div class="row landing-opportunities__block">
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Меняйте баллы на скидки в точках продаж курорта</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки на ски-пассы и прогулочные билеты</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки на услуги гидов и инструкторов</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки на прокат оборудования и снаряжения</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Меняйте баллы на проживание в отелях</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки на услуги партнеров курорта</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки в магазинах, расположенных на территории курорта</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-opportunities__item">
+                            <div class="landing-opportunities__img">
+                                <img src="">
+                            </div>
+                            <p class="landing-opportunities__name">Скидки на посещения ресторанов</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="advantages" data-onscroll="1" class="landing-advantages bg-gray landing__border--green">   
+                <div class="container">
+                    <h2 class="landing__middle-title landing-advantages__title">                    
+                        Почему покупать отели и услуги курорта лучше на сайте Красной Поляны: 
+                    </h2>
+                </div>       
+                
+                <div class="landing__border landing-advantages__block landing__border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 landing-advantages__item">
+                                <div class="landing-advantages__img"></div>
+                                <div class="landing-advantages__text">
+                                    <p>При бронировании отелей курорта с картой лояльности КП через сторонние агрегаторы вы получаете баллами всего 0,001% от суммы покупки.  А при бронировании через сайт  - до 5%!
+                                    </p>   
+                                    <p>
+                                        При бронировании услуг  в оффлайн-точках всего 3%, а при покупке через сайт до 10%! Баллы позволяют вам совершать новые покупки со скидкой!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 landing-advantages__item">
+                                <div class="landing-advantages__img"></div>
+                                <div class="landing-advantages__text">
+                                    <p>При авторизированных покупках на сайте мы учитываем историю ваших транзакций и через некоторое время вы можете получить карту лояльности более высокого уровня.
+                                    </p>   
+                                    <p>
+                                        Выше уровень карты - больше выгод от покупок!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 landing-advantages__item">
+                                <div class="landing-advantages__img"></div>
+                                <div class="landing-advantages__text">
+                                    <p>При покупке на сайте вам не нужно заботиться о бумажных билетах и подтверждениях бронирования - данные доступны в личном кабинете сайта и мобильного приложения.
+                                    </p>  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>                        
+                </div>
+            
+                <div class="container">
+                    <h2 class="landing__middle-title landing-advantages__programm-title">Никакой магии — только ваша выгода!</h2>
+                    <p class="landing__subtitle">Посмотрите как работает программа лояльности в действии:</p>
+    
+                    <div class="row landing-advantages__programm">
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-advantages__programm-item">
+                            <div class="landing-advantages__programm-img">
+                                <img src="../images/img1.jpg">
+                                <span class="landing-advantages__programm-count">1</span>
+                            </div>
+                            <p class="landing-advantages__programm-text">Иван зарегистрировался на странице программы лояльности КП и получил привественные 300 баллов на свой счет.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-advantages__programm-item">
+                            <div class="landing-advantages__programm-img">
+                                <img src="../images/img2.jpg">
+                                <span class="landing-advantages__programm-count">2</span>
+                            </div>
+                            <p class="landing-advantages__programm-text">Наш путешественник забронировал отель на сайте Красной поляны, потратив на это 40 000 рублей и получил 2000 баллов на счет. </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-advantages__programm-item">
+                            <div class="landing-advantages__programm-img">
+                                <img src="../images/img3.jpg">
+                                <span class="landing-advantages__programm-count">3</span>
+                            </div>
+                            <p class="landing-advantages__programm-text">Приехав на курорт Иван решил купить ски-пасс на сайте курорта. Вместо обычной цены ~2500 руб. Иван потратил всего 2 250 руб. заплатив 10%  от цены билета баллами!</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12 landing-advantages__programm-item">
+                            <div class="landing-advantages__programm-img">
+                                <img src="../images/img4.jpg">
+                                <span class="landing-advantages__programm-count">4</span>
+                            </div>
+                            <p class="landing-advantages__programm-text">В течение всего отдыха Иван использовал карту программы лояльности и покупал услуги курорта со скидкой! По возращении домой он обнаружил, что количество и сумма покупок позволила ему перейти на новый уровень программы лояльности. А это значит отдыхать в Красной поляне стало еще выгоднее!</p>
+                        </div>
+                    </div>
+                </div>      
+            </section>
+
+            <section id="get-points" data-onscroll="1" class="landing-get-points landing__border">
+                <div class="container">
+                    <h2 class="landing__middle-title landing-get-points__title">Условия начисления баллов при покупках</h2>
+
+                    <div class="tab-nav">
+                        <a href="#tab1" class="js-tab-link tab-nav__link active">Бронирование отелей и апартаментов</a>
+                        <a href="#tab2" class="js-tab-link tab-nav__link">Собственные сервисы и услуги горы</a>
+                    </div>
+
+                    <div id="tab1" class="js-tab tab-content active">
+                        <div class="table-wrap">
+                            <table class="landing-table">
+                                <tr class="landing-table__top-row">
+                                    <td class="landing-table__first-col"></td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="landing-table__header">
+                                    <td class="landing-table__first-col">Тип карты</td>
+                                    <td><span class="landing-table__text">Silver</span></td>
+                                    <td><span class="landing-table__text">Gold</span></td>
+                                    <td><span class="landing-table__text">Platinum</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey">
+                                    <td  class="landing-table__first-col">Покупка на сайте курорта</td>
+                                    <td><span class="landing-table__text">3%</span></td>
+                                    <td><span class="landing-table__text">4%</span></td>
+                                    <td><span class="landing-table__text">5%</span></td>
+                                </tr>
+                                <tr class="landing-table__row">
+                                    <td  class="landing-table__first-col">Покупка на сайте бренда</td>
+                                    <td><span class="landing-table__text">1%</span></td>
+                                    <td><span class="landing-table__text">1,5%</span></td>
+                                    <td><span class="landing-table__text">2%</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey">
+                                    <td  class="landing-table__first-col">Покупка на сайте агрегаторов</td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__row--bb">
+                                    <td  class="landing-table__first-col">Покупка на сайте агентств/операторов</td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <a href="#" class="link link--underline landing-get-points__link">Правила пользования</a>
+                    </div>
+
+                    <div id="tab2" class="js-tab tab-content">
+                        <div class="table-wrap">
+                            <table class="landing-table">
+                                <tr class="landing-table__top-row">
+                                    <td class="landing-table__first-col"></td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="landing-table__header">
+                                    <td class="landing-table__first-col">Тип карты</td>
+                                    <td><span class="landing-table__text">Silver</span></td>
+                                    <td><span class="landing-table__text">Gold</span></td>
+                                    <td><span class="landing-table__text">Platinum</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey">
+                                    <td  class="landing-table__first-col">Покупка на сайте курорта</td>
+                                    <td><span class="landing-table__text">3%</span></td>
+                                    <td><span class="landing-table__text">4%</span></td>
+                                    <td><span class="landing-table__text">5%</span></td>
+                                </tr>
+                                <tr class="landing-table__row">
+                                    <td  class="landing-table__first-col">Покупка на сайте бренда</td>
+                                    <td><span class="landing-table__text">1%</span></td>
+                                    <td><span class="landing-table__text">1,5%</span></td>
+                                    <td><span class="landing-table__text">2%</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey">
+                                    <td  class="landing-table__first-col">Покупка на сайте агрегаторов</td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__row--bb">
+                                    <td  class="landing-table__first-col">Покупка на сайте агентств/операторов</td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                    <td><span class="landing-table__text">0,01%</span></td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <a href="#" class="link link--underline landing-get-points__link">Правила пользования</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="spend-points" data-onscroll="1" class="landing-spend-points landing__border">
+                <div class="container">
+                    <h2 class="landing__middle-title landing-spend-points__title">Возможности списания баллов при следующих покупках</h2>
+
+                    <div class="tab-nav">
+                        <span class="tab-nav__link active">Покупка на официальном сайте</span>
+                    </div>
+
+                    <div class="tab-content active">
+                        <div class="table-wrap">
+                            <table class="landing-table">
+                                <tr class="landing-table__top-row">
+                                    <td class="landing-table__first-col"></td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="landing-table__img">
+                                            <img src="../images/card.png">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="landing-table__header">
+                                    <td class="landing-table__first-col">Тип карты</td>
+                                    <td><span class="landing-table__text">Silver</span></td>
+                                    <td><span class="landing-table__text">Gold</span></td>
+                                    <td><span class="landing-table__text">Platinum</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey">
+                                    <td class="landing-table__first-col">Бронирование отелей</td>
+                                    <td><span class="landing-table__text">3%</span></td>
+                                    <td><span class="landing-table__text">4%</span></td>
+                                    <td><span class="landing-table__text">5%</span></td>
+                                </tr>
+                                <tr class="landing-table__row">
+                                    <td class="landing-table__first-col">Покупка услуг и сервисов курорта</td>
+                                    <td><span class="landing-table__text">10%</span></td>
+                                    <td><span class="landing-table__text">15%</span></td>
+                                    <td><span class="landing-table__text">20%</span></td>
+                                </tr>
+                                <tr class="landing-table__row landing-table__grey landing-table__row--bb">
+                                    <td class="landing-table__first-col">Покупка услуг и сервисов партнеров</td>
+                                    <td><span class="landing-table__text">10%</span></td>
+                                    <td><span class="landing-table__text">10%</span></td>
+                                    <td><span class="landing-table__text">10%</span></td>
+                                </tr>
+                            </table>                            
+                        </div>
+                        <a href="#" class="link link--underline landing-get-points__link">Правила пользования</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="extra-bonus" data-onscroll="1" class="landing-extra-bonus landing__border">
+                <div class="container">
+                    <h2 class="landing__middle-title landing-extra-bonus__title">Дополнительные преференции участникам системы лояльности</h2>
+                    <p class="landing__subtitle landing-extra-bonus__subtitle">Каждый участник программы лояльности может рассчитывать на дополнительные преференции от курорта и партнеров курорта. С течением времени список партнеров и преференций может менятся.</p>
+
+                    <div class="table-wrap">
+                        <table class="landing-table">
+                            <tr class="landing-table__top-row">
+                                <td class="landing-table__first-col"></td>
+                                <td>
+                                    <div class="landing-table__img">
+                                        <img src="../images/card.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="landing-table__img">
+                                        <img src="../images/card.png">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="landing-table__img">
+                                        <img src="../images/card.png">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="landing-table__header">
+                                <td class="landing-table__first-col">Тип карты</td>
+                                <td> <span class="landing-table__text">Silver</span> </td>
+                                <td> <span class="landing-table__text">Gold</span> </td>
+                                <td> <span class="landing-table__text">Platinum</span> </td>
+                            </tr>
+                            <tr class="landing-table__row--high landing-table__grey">
+                                <td class="landing-table__first-col">Kant - товары для спорта и отдыха (ТРЦ Горки Молл) <br> 1000 рублей на покупку снаряжения</td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span> </td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                            </tr>
+                            <tr class="landing-table__row--high">
+                                <td class="landing-table__first-col">Триал-Спорт - товары для спорта (ТРЦ Горки Молл) <br> Подарок, который можно получить в магазине</td>
+                                <td class="landing-table__big-text landing-table__text--red"><span class="landing-table__text">-</span></td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                            </tr>
+                            <tr class="landing-table__row--high landing-table__grey">
+                                <td class="landing-table__first-col">Kanzler - магазин одежды (ТРЦ Горки Молл) <br> Подарок или подарочная карта 1000 рублей</td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                                <td class="landing-table__big-text landing-table__text--blue"><span class="landing-table__text">+</span></td>
+                            </tr>
+                        </table>                
+                    </div>
+                    <a href="#" class="landing__btn landing__btn--borderd landing-extra-bonus__btn">Весь список</a>
+                </div>
+            </section>
+
+            <section id="faq" data-onscroll="1" class="landing-faq landing__border">
+                <div class="container">
+                    <h2 class="landing__middle-title landing-faq__title">Частозадаваемые вопросы</h2>
+
+                    <div class="landing-faq-accordion">
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Как получить карту лояльности?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Как и где накопить бонусы</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Как и где потратить бонусы?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Как узнать бонусный баланс на своей карте?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Как активировать карту?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Срок жизни бонусов?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Какие ещё привилегии дает карта лояльности?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                        <div class="landing-faq-accordion__item">
+                            <div class="landing-faq-accordion-item__head js-accordion-head">
+                                <p>Даются ли бонусы если я привел друзей?</p>
+                                <div class="landing-faq-accordion-item__arrow"></div>
+                            </div>
+                            <div class="landing-faq-accordion-item__body js-accordion-body">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, mollitia? Quia dolorum, soluta in minima ratione voluptatum sed animi quas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            //scroll links menu
+            function scrollNav() {
+                var scroll_top = $(document).scrollTop();
+                var id;
+                $('[data-scroll]').removeClass('active');
+                $('[data-onscroll="1"]').each(function() {
+                    if (scroll_top + 110 >= $(this).offset().top) {
+                        id = $(this).attr('id');
+                        return;
+                    }
+                });
+                $('[data-scroll="' + id + '"]').addClass('active');
+            }
+
+            $(window).scroll(scrollNav);
+
+            //tabs
+            var tabLink = $('.js-tab-link'),
+                tabs = $('.js-tab');
+            
+            tabLink.on('click', function(e) {
+                e.preventDefault();
+
+                var tabId = $(this).attr('href');
+                
+                tabLink.removeClass('active');
+                $(this).addClass('active');
+                tabs.removeClass('active');
+                $(tabId).addClass('active');
+            });
+
+
+            //accordion
+            var accordionItem = $('.js-accordion-head'),
+                accordionBody = $('.js-accordion-body')
+
+            accordionItem.on('click', function() {
+                //закомментировать след. 4 строки, если не нужно раскрытие только одного элемента
+                if(!$(this).hasClass('active')) {
+                    accordionItem.removeClass('active');
+                    accordionBody.slideUp();
+                }        
+                
+                $(this).toggleClass('active');
+                $(this).siblings('.js-accordion-body').slideToggle();
+            });
+
+        });
+    </script>
+</body>
+</html>
