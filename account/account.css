@@ -586,7 +586,8 @@ html body {
 }
 
 .form-item__input:focus + .form-item__name,
-.form-item__input:not(:focus):valid + .form-item__name {
+.form-item__input:not(:focus):valid + .form-item__name,
+.form-item__input:not(:focus):invalid + .form-item__name {
     font-size: 12px;
     transform: translateY(-26px);
     transition: all 0.3s ease;
